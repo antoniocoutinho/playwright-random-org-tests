@@ -17,9 +17,7 @@ This project is a sample Playwright setup for end-to-end testing.
 
 2. Install the dependencies:
    ```
-   npm install
-   npm install --save-dev @playwright/test
-   npx playwright install
+   npm install && npm install --save-dev @playwright/test && npx playwright install
    ```
 
 ## Running Tests
