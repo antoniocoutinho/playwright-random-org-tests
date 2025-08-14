@@ -1,0 +1,36 @@
+# Node.js
+# These are standard for almost all Node.js projects
+node_modules/
+.npm/
+npm-debug.log*
+yarn-error.log
+
+# Playwright artifacts and reports
+# Playwright stores test results and reports here by default.
+test-results/
+playwright-report/
+
+# Playwright browser cache
+# This folder contains the browsers Playwright downloads.
+# It can get quite large and should not be committed.
+.cache/playwright/
+
+# Logs and other temporary files
+.log
+.DS_Store
+.vscode/
+
+# Environment variables
+.env
+.env.local
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# IDE files
+.idea/
+.vs/
+*.sublime-project
+*.sublime-workspace
