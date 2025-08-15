@@ -1,0 +1,42 @@
+# .github/workflows/playwright.yml
+name: Playwright Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    # Use the latest Ubuntu environment to run the tests
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      # Installs Node.js in version 20.x
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20.x
+
+    - name: Install dependencies
+      # Installs all project dependencies
+      run: npm ci
+
+    - name: Install Playwright browsers
+      # Downloads the browsers (Chromium, Firefox, WebKit) for the CI environment
+      run: npx playwright install --with-deps
+
+    - name: Run Playwright tests
+      # Runs the tests using the Playwright command
+      run: npx playwright test
+
+    - name: Upload Playwright report
+      # Saves the test report so you can view it after the execution
+      uses: actions/upload-artifact@v4
+      with:
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 30

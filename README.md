@@ -12,7 +12,7 @@ This project is a sample Playwright setup for end-to-end testing.
 1. Clone the repository:
    ```
    git clone <repository-url>
-   cd pplaywrite-random-org-tests
+   cd playwrite-random-org-tests
    ```
 
 2. Install the dependencies:
@@ -29,7 +29,8 @@ npx playwright test
 
 ## Project Structure
 
-- `tests/`: Contains the test files.
+- `src/tests/`: Contains the test files.
+- `src/pages/`: Contains the pages classes.
 - `playwright.config.ts`: Configuration file for Playwright.
 - `package.json`: Lists the project dependencies and scripts.
 
