@@ -1,7 +1,7 @@
 # My Playwright Project
 This project is a sample Playwright setup for end-to-end testing.
 
-![Playwright Tests](https://github.com/antoniocoutinho/playwright-random-org-tests/actions/workflows/playwright-ci.yml/badge.svg)
+[![Playwright Tests](https://github.com/antoniocoutinho/playwright-random-org-tests/actions/workflows/playwright-ci.yml/badge.svg)](https://github.com/antoniocoutinho/playwright-random-org-tests/actions/workflows/playwright-ci.yml)
 
 ## Prerequisites
 
